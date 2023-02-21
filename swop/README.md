@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+# Getting Started with Swop Website codebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequiste
+
+    1. Ensure you have `node` version >=14 installed. To find out about this, Open a command prompt or terminal and type `node -v`
+    2. You have cloned the repo from github
+    3. You have a text editor (preferably vscode) installed on your computer
+
+## Steps
+
+    1. Open the project folder with your desire code editor
+    2. Open a built in terminal without included with your text editor
+    3. To install all dependencies used in the project, type in `npm install` into the open terminal and click enter on your keyboard
+    4. To ensure the project is open with rules specific by eslint used in this project, type in `npm run lint` on the terminal
+    5. Next, ensure the project files are rightly formatted by typing in `npm run format`
+    6. Finally, to start the development server, `npm run start`
+
+At this Point, you should see the application running on a broswer window/tab at [http://localhost:3000]
+If you encounter any issues while doing any of the above commands, kindly the sections below on the `available scripts` to find for little more insight.
+
+## Contributing Rules
+
+1. Clone repository
+2. Checkout an "all-time" branch using the following format <_your name_>-development (e.g git checkout -b pauline-development)
+
+NOTE: All Push and pull requests should be made toward the development branch.
+
+## Making a Commit
+
+Ensure to follow these steps when committing
+
+1. git add .
+2. npx lint-staged
+3. git commit -m <_message here_>
+4. git pull origin development
+5. git push
+
+## Opening a Pull request
+
+1. Go to github
+2. open a new Pull Request to development
 
 ## Available Scripts
 
@@ -24,47 +62,22 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run lint`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Checks if files obeys all Eslint set rules properly
 
-### `npm run eject`
+### `npm run lint:fix`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This script fixes all possible eslint errors in the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run format`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Formats all files using prettier set rules at .prettierrc
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `npm run check:format`
 
-## Learn More
+Checks if all files are formatted properly
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `npm run test-all`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Checks if files obeys the Eslint rules and are formatted properly
