@@ -1,8 +1,8 @@
 import React from 'react';
 // import { ProtectedRoutes } from 'components/guards';
-import { Home } from 'pages';
+import { Home, AboutUs, Contact, Donate, Volunteer, WhatWeDo, OurStaff, StatementOfFaith } from 'pages';
 import { Route, Routes } from 'react-router-dom';
-import { HOME } from 'navigation/constants';
+import { HOME, ABOUTUS, CONTACT, DONATE, VOLUNTEER, WHAT_WE_DO, OUR_STAFF, STATEMENT_OF_FAITH } from 'navigation/constants';
 
 function RouterConfig() {
 	return (
@@ -11,6 +11,13 @@ function RouterConfig() {
 
 			{/* List all public routes here */}
 			<Route exact path={HOME} element={<Home />} />
+			<Route path={ABOUTUS} element={<AboutUs />} />
+			<Route path={CONTACT} element={<Contact />} />
+			<Route path={DONATE} element={<Donate />} />
+			<Route path={VOLUNTEER} element={<Volunteer />} />
+			<Route path={WHAT_WE_DO} element={<WhatWeDo />} />
+			<Route path={OUR_STAFF} element={<OurStaff />} />
+			<Route path={STATEMENT_OF_FAITH} element={<StatementOfFaith />} />
 
 			{/*************************PROTECTED ROUTES************************************** */}
 			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}> */}

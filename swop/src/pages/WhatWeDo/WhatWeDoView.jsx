@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-function HomePageView() {
+function WhatWeDoView() {
 	return <PageWrapper></PageWrapper>;
 }
 
-export default HomePageView;
+export default WhatWeDoView;
