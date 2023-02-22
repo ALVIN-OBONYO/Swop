@@ -7,10 +7,12 @@ module.exports = {
 			spectral: ['spectral', 'san-serif'],
 		},
 		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			black: '#000000',
+			yellow: '#FFB923',
 			white: '#FFFFFF',
+			black: '#000000',
+			grey: '#808080',
+			lightGrey: '#F5F5F5',
+			snow: '#FBF9F5',
 		},
 		screens: {
 			sm: '512px',
