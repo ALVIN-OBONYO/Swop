@@ -11,7 +11,6 @@ const NavBar = () => {
 			<div className='flex items-center font-medium justify-around'>
 				<div className='z-50 p-5 md:w-auto w-full flex justify-between'>
 					<img src={logo} alt='logo' className='md:cursor-pointer h-20' />
-					<p className='pt-6 pl-4 text-xl'>Black Woman Can</p>
 					<div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
 					</div>
@@ -22,24 +21,12 @@ const NavBar = () => {
 							Home
 						</Link>
 					</li>
+					<NavBarLinks />
 					<li>
-						<Link to='/about-us' className='py-7 px-3 inline-block'>
-							About Us
+						<Link to='/Contact' className='py-7 px-3 inline-block'>
+							Contact
 						</Link>
 					</li>
-					<NavBarLinks />
-					<button
-						type='submit'
-						className='px-10 py-4 text-xl outline outline-2 outline-purple rounded text-purple'
-					>
-						<Link to='/sign-in'>Sign In</Link>
-					</button>
-					<button
-						type='submit'
-						className='px-10 py-4 text-xl bg-purple rounded text-white'
-					>
-						<Link to='/sign-up'>Sign Up</Link>
-					</button>
 				</ul>
 				<div className='md:block hidden'>{/* <Button /> */}</div>
 				{/* Mobile nav */}
@@ -54,12 +41,12 @@ const NavBar = () => {
 							Home
 						</Link>
 					</li>
+					<NavBarLinks />
 					<li>
-						<Link to='/' className='py-7 px-3 inline-block'>
-							About Us
+						<Link to='/Contact' className='py-7 px-3 inline-block'>
+							Contact
 						</Link>
 					</li>
-					<NavBarLinks />
 					<div className='py-5'>{/* <Button /> */} </div>
 				</ul>
 			</div>
