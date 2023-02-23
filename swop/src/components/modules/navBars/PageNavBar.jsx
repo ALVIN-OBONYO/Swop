@@ -9,7 +9,7 @@ const NavBar = () => {
 	return (
 		<nav>
 			<div className='flex items-center font-medium justify-around'>
-				<div className='z-50 p-5 md:w-auto w-full flex justify-between'>
+				<div className='z-50 md:w-auto w-full flex justify-between'>
 					<img src={logo} alt='logo' className='md:cursor-pointer h-20' />
 					<div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
@@ -18,17 +18,21 @@ const NavBar = () => {
 				<ul className='md:flex hidden items-center gap-8 text-xl'>
 					<li>
 						<Link to='/' className='py-7 px-3 inline-block'>
-							Home
+							HOME
 						</Link>
 					</li>
 					<NavBarLinks />
 					<li>
 						<Link to='/Contact' className='py-7 px-3 inline-block'>
-							Contact
+							CONTACT
 						</Link>
 					</li>
 				</ul>
-				<div className='md:block hidden'>{/* <Button /> */}</div>
+				<div className='md:block hidden'>
+					<button className='bg-yellow text-black rounded-full py-3 px-6'>
+						DONATE NOW
+					</button>
+				</div>
 				{/* Mobile nav */}
 				<ul
 					className={`
