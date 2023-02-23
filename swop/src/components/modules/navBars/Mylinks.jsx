@@ -7,7 +7,7 @@ import {
 } from 'navigation/constants';
 export const links = [
 	{
-		name: 'About Us',
+		name: 'ABOUT US',
 		submenu: true,
 		sublinks: [
 			{
@@ -20,7 +20,7 @@ export const links = [
 		],
 	},
 	{
-		name: 'Support Us',
+		name: 'SUPPORT US',
 		submenu: true,
 		sublinks: [
 			{
