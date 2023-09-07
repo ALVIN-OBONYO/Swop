@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import watch from './watch.png';
 import { Link } from 'react-router-dom';
  import {
@@ -26,8 +26,8 @@ import { Link } from 'react-router-dom';
             {`© Copyright ${new Date().getFullYear()} SWOP All rights reserved.`}
           </p>
         </div>
-      */
-       // <div className='grid gap-2 grid-cols-2 mt-6'>
+      
+        <div className='grid gap-2 grid-cols-2 mt-6'>
 						<div className='flex flex-col'>
 							<LinkButton to='/'>Home</LinkButton>
 							<LinkButton to='/'>News</LinkButton>
@@ -87,3 +87,5 @@ import { Link } from 'react-router-dom';
 }
 
 export default PageFooter;
+
+*/
