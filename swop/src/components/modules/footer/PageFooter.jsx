@@ -13,12 +13,12 @@ function PageFooter() {
 		<>
 			<div className='text-white grid grid-cols-3'>
 				<div className='text-center text-white'>
-					<p className='font-semibold text-xl mt-5 pb-6'>REAL PARADISE</p>
-					<p className='pb-2 text-base'>5040 Real Paradise, Kenya</p>
+					<p className='font-semibold text-xl mt-5 pb-6'> SWOP </p>
+					<p className='pb-2 text-base'>5040 Siaya, Kenya</p>
 					<p className='pb-2 text-base'>P.O Box 20227 - 00100</p>
 					<p className='pb-2 text-base'>Nairobi Kenya</p>
 					<p className='pb-2 text-base'>+2547000000</p>
-					<p className='pb-2 text-base'>info@realparadise.com</p>
+					<p className='pb-2 text-base'>info.swop@gmail.com</p>
 				</div>
 				<div className='text-center'>
 					<p className='font-semibold text-xl mt-5 pb-6 text-white'>NAVIGATE</p>
@@ -36,8 +36,7 @@ function PageFooter() {
 							EXPLORE
 						</p>
 						<div className='text-base'>
-							<Link to='/Buy'>Buy</Link> <br />
-							<Link to='/Rent'>Rent</Link> <br />
+					
 							<Link to='/'>Developments</Link> <br />
 							<Link to='/'>Services</Link> <br />
 							<Link to='/'>Privacy Policy</Link> <br />
